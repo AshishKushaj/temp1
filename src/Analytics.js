@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Stackedbarchart from './Graph1';
 import Donutchart from './Graph2';
-import Dropdown from './Dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -19,6 +18,7 @@ font-weight:bold;
 `;
 
 const Anal =styled.div`
+margin:0;
 `;
 const Hr=styled.hr`
 margin-top:0px;
@@ -113,7 +113,7 @@ export default function Analytics(){
   const data2 = [95];
   const data3 = [59];
   return (
-    <div className=" mr-0 ">
+    <div className="">
       <div>
         <Anal className="">
           <Title>Requirement Income</Title>
@@ -152,7 +152,7 @@ export default function Analytics(){
             These numbers represent current goal achievement
           </Desc>
 
-          <div className="ml-5 ">
+          <div className="ml-5 md:grid-flow-row">
             <div>
               <Label>Age:</Label>
               <Select>
@@ -173,7 +173,7 @@ export default function Analytics(){
               </Select>
             </div>
 
-            <Graphsec>
+            <Graphsec className=''>
               <Donutchart data={data1} />
               <Donutchart data={data2} />
               <Donutchart data={data3} />

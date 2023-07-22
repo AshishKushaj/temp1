@@ -12,13 +12,12 @@ function App() {
 
         <div
           className="flex flex-col md:flex-row
-
         "
         >
-          <div className="w-full md:w-fit">
+          <div className="w-full md:w-full">
             <Profile />
           </div>
-          <div className=" ">
+          <div className="w-[500px]">
             <Analytics />
           </div>
 

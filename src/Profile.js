@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Dropdown from './Dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Analytics from './Analytics';
 
 
 
